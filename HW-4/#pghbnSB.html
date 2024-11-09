@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // створити функцію яка повертає найменьше число з масиву
+
+   function minValue(numbers){
+       let min = numbers[0];
+       for (let i =1; i<numbers.length;i++){
+           let number = numbers[i];
+           if (number < min) {
+               min = number;
+            }
+       }
+       return min;
+   }
+   console.log(minValue([88,77, 555, 33, -12, 66]));
+
+
+</script>
+</body>
+</html>

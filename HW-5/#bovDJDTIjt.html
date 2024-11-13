@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // - створити функцію яка приймає масив
+  // об'єктів з наступними полями id, name, age, та виводить їх в документ. Для кожного об'єкту окремий блок.
+
+  let exercise=(users)=>{
+  for (const user of users){
+    document.write(`<div>${user.id} -${user.name} -${user.age}</div>`);
+  }
+  }
+
+
+  exercise([
+    {id: 1, name: 'vasya', age: 31},
+    {id:2, name: 'varay', age: 31},
+    {id: 3, name: 'vasya', age: 71},
+    {id: 4, name: 'masha', age: 31},
+    {id:5, name: 'natasha', age: 41},
+    {id: 6, name: 'vasya', age: 31},
+  ]);
+
+
+</script>
+</body>
+</html>

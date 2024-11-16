@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // - створити функцію sortNums(array,direction), яка прймає масив чисел, та сортує його від більшого до меньшого,
+  // або навпаки в залежності від значення аргументу direction.
+  //         let nums = [11,21,3];
+  // sortNums(nums,'ascending') // [3,11,21]
+  // sortNums(nums,'descending') // [21,11,3]
+
+  function sortNums(arrayOfNums, direction){
+      if(direction==='ascending')return sortNums=arrayOfNums.sort((a,b)=>(a-b));
+    if(direction==='descending')return sortNums=arrayOfNums.sort((a,b)=>(b-a));
+  }
+
+
+  let arrayOfNums = [11,21,3];
+  function sortNums(arrayOfNums, direction){
+      if(direction ==='ascending'){
+          arrayOfNums.sort((a,b)=>a-b);
+          return arrayOfNums;
+      }
+      if(direction ==='descending'){
+          arrayOfNums.sort((a,b)=>b-a);
+          return arrayOfNums;
+      }
+  }
+console.log(sortNums(arrayOfNums,'ascending'));
+console.log(sortNums(arrayOfNums,'descending'));
+</script>
+</body>
+</html>

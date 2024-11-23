@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cum dolorum ducimus et fugiat iste iure,
+    laudantium modi necessitatibus officiis possimus repudiandae sint temporibus? Adipisci aliquid beatae
+    dolore dolorem ducimus eaque, id illo modi, mollitia natus, odit quasi quo reiciendis rerum saepe totam ullam?
+    Aperiam assumenda cumque delectus doloribus expedita in incidunt ipsam,
+    ipsum iusto minima mollitia officia officiis, quo quod repellat sit sunt totam unde voluptatum?
+</div>
+<button id="button1">disappear</button>
+<script>
+    // #sH8c4er
+    // - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript,
+    //     зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
+
+
+ const buttons = document.getElementsByTagName("button");
+ const button = buttons[0];
+       button.onclick = function (){
+           document.getElementById("text").remove();
+       }
+
+</script>
+</body>
+</html>
